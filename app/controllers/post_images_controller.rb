@@ -27,7 +27,6 @@ class PostImagesController < ApplicationController
   end
 
 
-  end
 
   #投稿データのストロングパラメータ
   private
