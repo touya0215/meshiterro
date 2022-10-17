@@ -18,8 +18,11 @@
         <il>
           <%= link_to '投稿フォーム', new_post_image_path %>
         </il>
+        <il>
+          <%= link_to 'マイページ', user_path(current_user.id) %>
+        </il>
         <li>
-          <%= link_to "ログアウト", destroy_user_session_path_method: :delete %>
+          <%= link_to "ログアウト", destroy_user_session_path,method: :delete %>
         </li>
       <% else %>
         <li>
