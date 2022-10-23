@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   #get 'users/show'
   #get 'users/edit'
   #上二列を下の一行に変更
-  resources :users, only: [:show, :edit]
+  resources :users, only: [:show, :edit, :update]
 
 
   #get 'post_images/new'
