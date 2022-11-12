@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   #as: Prefix Verb の変更 ec2-user:~/environment/meshiterro (main) $ rails routes にて確認できる。
 
   resources :post_images, only: [:new, :create, :index, :show, :destroy] do
-    resources :post_comments, only: [:create]
+    resources :post_comments, only: [:create, :destroy]
   end
 
   #get 'users/show'
